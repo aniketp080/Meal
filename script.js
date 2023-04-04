@@ -15,7 +15,7 @@ let favList=[]
 let favour=[]
 let val= document.querySelector(".cards");
 let valFav= document.querySelector("#wishlist");
-console.log(valFav)
+
 
 let wishList=[];
 
@@ -40,7 +40,7 @@ const search_api=async()=>{
    // console.log(data)
     
         let result1=await data1.json();
-        console.log(result1)
+        //console.log(result1)
     
 
    for (let i in result1.meals){
@@ -50,7 +50,7 @@ const search_api=async()=>{
     
    
     
-    console.log(fil)
+    //console.log(fil)
 
     for (let item of fil){
        // console.log(item[0])
@@ -75,7 +75,7 @@ const search_api=async()=>{
        
     }
     
-    console.log(fil)
+    //console.log(fil)
 }
 else{
      val.innerHTML="";
@@ -138,7 +138,7 @@ searchButton.addEventListener("click",search_api())
 //add and remove from favlist
 function wishlist(){
     let products=document.querySelectorAll('.favourite')
-console.log(products)
+
 for (let i = 0; i < products.length; i++)
     {
         products[i].onclick = function(e) {
